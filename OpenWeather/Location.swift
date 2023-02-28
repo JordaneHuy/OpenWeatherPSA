@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Location {
+public class Location {
     var name: String
     
+    init(name: String) {
+        self.name = name
+    }
+    
     func test() {
-        print("popo")
+        print("popo \(name)")
     }
 }
