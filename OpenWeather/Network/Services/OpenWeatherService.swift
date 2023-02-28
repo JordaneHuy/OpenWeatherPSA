@@ -15,7 +15,7 @@ class OpenWeatherService: NetworkService {
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) {
     
         guard var urlComponent = URLComponents(string: request.url) else {
-            let error = NSError(
+            let error = NSError.init(
                 domain: "Bad URL",
                 code: 404,
                 userInfo: nil
@@ -35,7 +35,7 @@ class OpenWeatherService: NetworkService {
         urlComponent.queryItems = queryItems
         
         guard let url = urlComponent.url else {
-            let error = NSError(
+            let error = NSError.init(
                 domain: "Bad URL",
                 code: 404,
                 userInfo: nil
@@ -54,11 +54,22 @@ class OpenWeatherService: NetworkService {
             }
             
             guard let response = response as? HTTPURLResponse, 200..<300 ~= response.statusCode else {
-                return completion(.failure(NSError()))
+                let responseError = response as? HTTPURLResponse
+                let error = NSError.init(
+                domain: "Bad response",
+                code: responseError?.statusCode ?? 0,
+                userInfo: nil
+            )
+                return completion(.failure(error))
             }
             
             guard let data = data else {
-                return completion(.failure(NSError()))
+                let error = NSError.init(
+                domain: "Bad response",
+                code: response.statusCode,
+                userInfo: nil
+            )
+                return completion(.failure(error))
             }
             
             do {

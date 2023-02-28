@@ -12,9 +12,9 @@ public class OpenWeatherQuery {
     
     public init() {}
     
-    public func requestCity() {
+    public func requestCity(completion: @escaping (Result<[Location], Error>) -> Void) {
         openWeatherService.request(RequestLocation()) { result in
-            print("sisi")
+            completion(result)
         }
     }
 }

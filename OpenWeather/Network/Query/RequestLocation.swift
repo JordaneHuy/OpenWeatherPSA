@@ -20,7 +20,7 @@ struct RequestLocation: DataRequest {
     var queryItems: [String : String] {
         [
             "q": "London",
-            "api_key": apiKey
+            "appid": apiKey
         ]
     }
     
@@ -28,11 +28,10 @@ struct RequestLocation: DataRequest {
         .get
     }
     
-    func decode(_ data: Data) throws -> Location {
+    func decode(_ data: Data) throws -> [Location] {
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
         
-        let response = try decoder.decode(Location.self, from: data)
+        let response = try decoder.decode([Location].self, from: data)
         return response
     }
 }
