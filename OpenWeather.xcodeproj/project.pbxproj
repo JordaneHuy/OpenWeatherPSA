@@ -11,6 +11,7 @@
 		39C8A70B29AE40EB000A873C /* OpenWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C8A70029AE40EB000A873C /* OpenWeather.framework */; };
 		39C8A71029AE40EB000A873C /* OpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A70F29AE40EB000A873C /* OpenWeatherTests.swift */; };
 		39C8A71129AE40EB000A873C /* OpenWeather.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C8A70329AE40EB000A873C /* OpenWeather.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39C8A71B29AE4196000A873C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A71A29AE4196000A873C /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		39C8A70429AE40EB000A873C /* OpenWeather.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = OpenWeather.docc; sourceTree = "<group>"; };
 		39C8A70A29AE40EB000A873C /* OpenWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C8A70F29AE40EB000A873C /* OpenWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherTests.swift; sourceTree = "<group>"; };
+		39C8A71A29AE4196000A873C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		39C8A70229AE40EB000A873C /* OpenWeather */ = {
 			isa = PBXGroup;
 			children = (
+				39C8A71A29AE4196000A873C /* Location.swift */,
 				39C8A70329AE40EB000A873C /* OpenWeather.h */,
 				39C8A70429AE40EB000A873C /* OpenWeather.docc */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C8A71B29AE4196000A873C /* Location.swift in Sources */,
 				39C8A70529AE40EB000A873C /* OpenWeather.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +398,7 @@
 		39C8A71829AE40EB000A873C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +414,7 @@
 		39C8A71929AE40EB000A873C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
