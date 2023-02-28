@@ -10,11 +10,11 @@ import Foundation
 public class Location {
     var name: String
     
-    init(name: String) {
+    public init(name: String) {
         self.name = name
     }
     
-    func test() {
+    public func test() {
         print("popo \(name)")
     }
 }
