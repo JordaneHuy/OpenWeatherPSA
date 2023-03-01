@@ -26,6 +26,7 @@ struct RequestLocationDetail: DataRequest {
     init(location: Location) {
         queryItems = ["lat": String(location.lat),
                       "lon": String(location.lon),
+                      "units": "metric",
                       "appid": apiKey]
     }
     
