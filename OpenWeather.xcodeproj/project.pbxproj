@@ -17,6 +17,8 @@
 		39C8A76629AE61B3000A873C /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A76529AE61B3000A873C /* DataRequest.swift */; };
 		39C8A76929AE64B8000A873C /* RequestLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A76829AE64B8000A873C /* RequestLocation.swift */; };
 		39C8A76B29AE6920000A873C /* OpenWeatherQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A76A29AE6920000A873C /* OpenWeatherQuery.swift */; };
+		39C8A78329AF91CA000A873C /* RequestLocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A78229AF91CA000A873C /* RequestLocationDetail.swift */; };
+		39C8A78529AF9264000A873C /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C8A78429AF9264000A873C /* LocationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		39C8A76529AE61B3000A873C /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		39C8A76829AE64B8000A873C /* RequestLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocation.swift; sourceTree = "<group>"; };
 		39C8A76A29AE6920000A873C /* OpenWeatherQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherQuery.swift; sourceTree = "<group>"; };
+		39C8A78229AF91CA000A873C /* RequestLocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationDetail.swift; sourceTree = "<group>"; };
+		39C8A78429AF9264000A873C /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				39C8A71A29AE4196000A873C /* Location.swift */,
+				39C8A78429AF9264000A873C /* LocationDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				39C8A76829AE64B8000A873C /* RequestLocation.swift */,
+				39C8A78229AF91CA000A873C /* RequestLocationDetail.swift */,
 			);
 			path = Query;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				39C8A71B29AE4196000A873C /* Location.swift in Sources */,
 				39C8A76629AE61B3000A873C /* DataRequest.swift in Sources */,
 				39C8A76129AE5DA7000A873C /* HttpMethod.swift in Sources */,
+				39C8A78529AF9264000A873C /* LocationDetail.swift in Sources */,
+				39C8A78329AF91CA000A873C /* RequestLocationDetail.swift in Sources */,
 				39C8A76429AE611F000A873C /* OpenWeatherService.swift in Sources */,
 				39C8A76929AE64B8000A873C /* RequestLocation.swift in Sources */,
 				39C8A76B29AE6920000A873C /* OpenWeatherQuery.swift in Sources */,
