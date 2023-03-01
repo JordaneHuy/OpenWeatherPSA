@@ -17,15 +17,15 @@ struct RequestLocation: DataRequest {
         return baseURL + path
     }
     
-    var queryItems: [String : String] {
-        [
-            "q": "London",
-            "appid": apiKey
-        ]
-    }
+    var queryItems: [String : String] = [:]
     
     var method: HttpMethod {
         .get
+    }
+    
+    init(searchLocation: String) {
+        queryItems = ["q": searchLocation,
+                      "appid": apiKey]
     }
     
     func decode(_ data: Data) throws -> [Location] {

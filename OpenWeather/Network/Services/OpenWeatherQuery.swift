@@ -12,8 +12,8 @@ public class OpenWeatherQuery {
     
     public init() {}
     
-    public func requestCity(completion: @escaping (Result<[Location], Error>) -> Void) {
-        openWeatherService.request(RequestLocation()) { result in
+    public func requestCity(location: String,completion: @escaping (Result<[Location], Error>) -> Void) {
+        openWeatherService.request(RequestLocation(searchLocation: location)) { result in
             completion(result)
         }
     }
