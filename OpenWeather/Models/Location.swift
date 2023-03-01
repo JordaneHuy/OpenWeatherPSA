@@ -11,8 +11,4 @@ public struct Location: Decodable {
     public var name: String
     public var lat: Double
     public var lon: Double
-    
-    func test() {
-        print("popo")
-    }
 }
