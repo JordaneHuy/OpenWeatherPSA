@@ -22,3 +22,4 @@ The OpenWeatherPSA Framework only have two query:
 
 ## Diagram
 
+<img width="704" alt="Capture d’écran 2023-03-01 à 18 36 30" src="https://user-images.githubusercontent.com/12754688/222218200-dd3229a0-8998-4fd9-9565-e88aee4ffe25.png">
