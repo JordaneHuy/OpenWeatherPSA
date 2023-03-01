@@ -31,7 +31,6 @@ struct RequestLocationDetail: DataRequest {
     
     func decode(_ data: Data) throws -> LocationDetail {
         let decoder = JSONDecoder()
-        let str = String(decoding: data, as: UTF8.self)
 
         let response = try decoder.decode(LocationDetail.self, from: data)
         return response
